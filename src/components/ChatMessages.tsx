@@ -27,7 +27,7 @@ export default function ChatMessages({ messages, isLoading, conversationId }: Ch
   }, [messages])
 
   return (
-    <ScrollArea className="flex-1 p-4">
+    <ScrollArea className="flex-1 min-h-0 overflow-hidden p-4">
       <div className="max-w-3xl mx-auto space-y-1">
         {messages.map((msg) => (
           <MessageBubble
